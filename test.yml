@@ -1,0 +1,6 @@
+--- 
+ - host: bjorn
+   
+   tasks: 
+   - name: test
+     echo: "hello world"
