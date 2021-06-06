@@ -3,4 +3,4 @@
    
    tasks: 
    - name: test
-     echo: "hello world"
+     shell: echo "hello world"
