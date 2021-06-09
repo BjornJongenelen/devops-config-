@@ -1,6 +1,0 @@
---- 
- - hosts: bjorn
-   
-   tasks: 
-   - name: test
-     shell: echo "hello world"
