@@ -4,6 +4,6 @@
 
   - name: Install Docker
      apt:
-      name: Docker
-      state: latest
-      update_cache: yes
+       name: Docker
+       state: latest
+       update_cache: yes
