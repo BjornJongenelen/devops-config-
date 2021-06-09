@@ -10,8 +10,8 @@
     
    - name: Clone git repo
      ansible.builtin.git:
-      repo: "https://github.com/BjornJongenelen/devops.git"
-      dest: "/home/{{ ansible_user }}/Desktop"
+       repo: "https://github.com/BjornJongenelen/devops.git"
+       dest: "/home/{{ ansible_user }}/Desktop"
    
    - name: Install Jenkins
      docker_container:
