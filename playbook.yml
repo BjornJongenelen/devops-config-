@@ -8,10 +8,10 @@
     state: latest
     update_cache: yes 
     
-    - name: Clone git repo
-      ansible.builtin.git:
-        repo: "https://github.com/BjornJongenelen/devops.git"
-        dest: "/home/{{ ansible_user }}/Desktop"
+  - name: Clone git repo
+    ansible.builtin.git:
+      repo: "https://github.com/BjornJongenelen/devops.git"
+      dest: "/home/{{ ansible_user }}/Desktop"
    
     - name: Install Jenkins
       docker_container:
