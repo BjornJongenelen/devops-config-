@@ -9,17 +9,17 @@
       update_cache: yes 
     
    - name: Clone git repo
-     ansible.builtin.git:
+      ansible.builtin.git:
        repo: "https://github.com/BjornJongenelen/devops.git"
        dest: "/home/{{ ansible_user }}/Desktop"
    
    - name: Install Jenkins
-     docker_container:
+      docker_container:
        name: jenkins
        image: jenkins/jenkins:latest
        ports:
         - "8080:8080"
        
    - name: Install Check_mk
-     docker_container:
+      docker_container:
        name: checkmk/check-mk-raw
