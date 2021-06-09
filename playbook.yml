@@ -1,7 +1,11 @@
 ---
 - hosts: bjorn
   tasks:
-  become: yes
+  
+  - name: Add an apt signing key for Docker
+     apt_key:
+       url: https://download.docker.com/linux/ubuntu/gpg
+       state: present
   
   - name: Add Docker Repository
     apt_repository:
