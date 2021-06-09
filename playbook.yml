@@ -4,6 +4,11 @@
   tasks:
   - name: Install Docker
     apt:
-     name: "{{ item }}"
+     name: Docker
      state: latest
      update_cache: yes
+     
+  - name: Clone git Repo
+    ansible.builtin.git:
+     repo: "https://github.com/BjornJongenelen/devops.git"
+     dest: "/home/{{ ansible_user }}/Desktop"
