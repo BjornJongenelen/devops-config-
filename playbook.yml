@@ -1,10 +1,10 @@
 ---
 - hosts: bjorn
   tasks:
+  become: yes
   
   - name: Add Docker Repository
     apt_repository:
-      become: yes
       repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
       state: present
       
