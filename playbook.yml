@@ -4,6 +4,6 @@
   tasks:
   - name: Install Docker
     apt:
-     name: Docker
+     name: "{{ item }}"
      state: latest
      update_cache: yes
